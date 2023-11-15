@@ -1,0 +1,6 @@
+management.tracing.sampling.probability: 1.0
+spring:
+  application.name: springboot-micrometer-brave-zipkin
+  
+
+logging.pattern.level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
